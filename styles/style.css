@@ -1,1 +1,28 @@
-
+@font-face {
+        font-family:'Orelega One', cursor;
+        src: url(fonts/OrelegaOne-Regular.ttf);
+    } 
+ body {
+    font-family: 'Cambria', sans-serif;
+        }
+.foto {
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+header {
+ background-color: #79463d;
+ padding: 30px;
+ text-align: center;
+ font-size: 35px;
+ color: white;
+}
+footer {
+ background-color: #79463d;
+ padding: 10px;
+ text-align: center;
+ color: #fff;
+}
+   
