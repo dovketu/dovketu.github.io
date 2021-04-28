@@ -44,7 +44,7 @@ header {
     padding:10px 20px;
     line-height:1.2em;
     color:#fff;
-    border-left:1px solid #79463d;
+    border-left: 2px solid #79463d;
 }
 .nav a:hover {
     text-decoration:none;
