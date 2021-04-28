@@ -44,14 +44,14 @@ header {
     padding:10px 20px;
     line-height:1.2em;
     color:#fff;
-    border-left:1px solid #9c7575;
+    border-left:1px solid #79463d;
 }
 .nav a:hover {
     text-decoration:none;
     background: #9c7575;
 }
 .nav li ul {
-    background:#683302;
+    background:#79463d;
     border-radius: 7px;
 }
 .nav li ul li {
