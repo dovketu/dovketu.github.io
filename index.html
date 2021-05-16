@@ -27,97 +27,237 @@
             background-attachment: fixed;
         }
 
-        .glass_box {
-          width: 60vh;
-          height: 60vh;
-          background-color: #ffffff59;
-          backdrop-filter: blur(15px);
-          border: 1px solid #ffffff59;
-          box-shadow: 2.5px 2.5px 30px 0px rgb(230 230 230 / 46%);
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center; 
+        .title {
+            font-size: 4rem;
+            color: black;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    .container {
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         }
 
-        .profile {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+    .circle_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    background: rgba(255,255,255, 0.06);
+    padding: 3em;
+    height: 60vh;
+    width: 60vh;
+    border-radius: 50%;
+    border-left: 1px solid rgba(255,255,255, 0.3);
+    border-top: 1px solid rgba(255,255,255, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out; 
+    }
+
+
+        .profile_info {
+           text-align: center;
         }
-            .profile_info {
-                text-align: center;
-            }
         
-            .profile_info .profile_img {
-                width: 12rem;
-                margin: 0 auto 5px;
-            }
+        .profile_info .profile_img {
+            width: 12rem;
+            margin: 0 auto 5px; 
+        }
         
-            .profile_info .profile_img img {
-                width: 100%;
-                display: block;
-                border-radius: 50%;
-            }
+        .profile_info .profile_img img {
+            width: 100%;
+            display: block;
+            border-radius: 50%;
+        }
         
-            .profile_info .profile_data .name {
-                font-size: 20px;
-                margin-bottom: 5px;
-                font-family: "Trade Winds";
-            }
+        .profile_info .profile_data .name {
+          font-size: 20px;
+          margin-bottom: 5px;
+          font-family: "Trade Winds";
+        }
         
-            .profile_info .profile_data span {
-                display: inline-block;
-                color: #697c8e;
-            }
+        .profile_info .profile_data span {
+        display: inline-block;
+        color: #697c8e;
+        }
         
-            .view_more_btn a {
-                display: block;
-                background-color: #ffffff59;
-                backdrop-filter: blur(15px);
-                border: 1px solid #ffffff59;
-                box-shadow: 2.5px 2.5px 30px 0px rgb(230 230 230 / 46%);
-                color: black;
-                padding: 10px 15px;
-                width: 125px;
-                margin: 10px auto;
-                border-radius: 3px;
-               
-            }
+
+         .view_more_btn a {
+            display: block;
+            background-color: #ffffff59;
+            backdrop-filter: blur(15px);
+            border: 1px solid #ffffff59;
+            box-shadow: 2.5px 2.5px 30px 0px rgb(230 230 230 / 46%);
+            color: black;
+            padding: 10px 15px;
+            width: 8rem;
+            margin: 10px auto;
+            border-radius: 20px;
+            text-decoration: none;
+        }
         
-       .view_more_btn a:link {
-  text-decoration: none;
-}
-            .view_more_btn a:hover {
-                background: #8b360e;
-                color: white;
-            }
+        .view_more_btn a:hover {
+            background: #8b360e;
+            color: white;
+        } 
         
-         .title {
-                font-size: 4rem;
-                color: black;
-                margin-bottom: 15px;
-                text-align: center;
-                font-style: italic;
-            }
+
+    .circle {
+      background: rgba(255,255,255,0.3);
+      backdrop-filter: blur(10px);
+      border-radius: 50%;
+      border-left: 1px solid rgba(255,255,255,0.3);
+      border-top: 1px solid rgba(255,255,255,0.3);
+      box-shadow: 10px 10px 60px -8px rgba(0,0,0,0.2);
+      position: absolute;
+      transition: all 0.2s ease;
+     }
+    
+    .circle-1 {
+      height: 90px;
+      width: 90px;
+      top: -30px;
+      left: 60px;
+      z-index: -1;
+    }
+
+    .circle-1:hover {
+      transform: translate(-4px, -5px);
+    }
+  
+    .circle-2 {
+     height: 90px;
+     width: 90px;
+     bottom: -30px;
+     right: 210px;
+     z-index: -1;
+    }
+
+    .circle-2:hover {
+      transform: translate(3px, 4px);
+    }
+  
+   .circle-3 {
+    height: 120px;
+    width: 120px;
+    bottom: 120px;
+    right: -40px;
+    z-index: -1;
+   }
+
+    .circle-3:hover {
+      transform: translate(4px, 0px);
+    }
+  
+   .circle-4 {
+    height: 50px;
+    width: 50px;
+    top: -10px;
+    right: 80px;
+    z-index: -1;
+    }
+
+    .circle-4:hover {
+      transform: translate(5px, -5px);
+    }
+  
+
+  .circle-5 {
+    height: 50px;
+    width: 50px;
+    bottom: 170px;
+    left: -30px;
+    z-index: -1;
+  }
+
+  section {
+            height: 100vh;
+        }
+        .back_to_top_btn_wrapper {
+            margin: 10rem 5rem 0 5rem;
+            position: sticky;
+            top: calc(100vh - 5rem);
+            float: right;
+        }
+        .back_to_top_btn:hover {
+            transform: scale(1.5);
+            transition: 0.2s ease-in-out;
+        }
+        .back_to_top_btn:not(hover) {
+            transition: 0.2s ease-in-out;
+        }
+        .back_to_top_btn a {
+            color: black;
+        }
+
+    footer {
+         overflow: hidden;
+    }
+
+    footer img {
+         width: 100%;
+         height: 10vh;
+        filter: blur(30px);
+         margin: -2rem -2rem -2rem -1rem;
+        transform: scale(1.1);
+    }
+
+  
     </style>
-    <header> 
-        <div class="title">My Blog</div>
-        <div class="profile">
-        <div class="glass_box">
-        <div class="profile_info">
-            <div class="profile_img">
-                <img src="images/photo.png" alt="profile_img" />
+    <header>
+        <p id="back" class="title">My BLOG</p>
+        <div class="container">
+            <div class="circle_box">
+                <div class="profile_info">
+                    <div class="profile_img">
+                        <img src="images/photo.png" alt="profile_img" width=100% height=100% />
+                    </div>
+                    <div class="profile_data">
+                        <p class="name">Dovilė Anusauskienė</p>
+                        <span><i class="fas fa-map-marker-alt"></i>Lithuania, Kaunas</span>
+                    </div>
+                    <div class="view_more_btn">
+                        <a href="education.html">Apie mane</a>
+                    </div>
+                </div> 
             </div>
-            <div class="profile_data">
-                <p class="name">Dovilė Anusauskienė</p>
-                <span><i class="fas fa-map-marker-alt"></i>Lithuania, Kaunas</span>
-            </div>
-            <div class="view_more_btn">
-                <a href="more.html">Apie mane</a>
-            </div>
-        </div>
+                <div class="circles">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                    <div class="circle circle-4"></div>
+                    <div class="circle circle-5"></div>
+                </div>
+           
+</div>
+</header>
+<div class="back_to_top_btn_wrapper">
+    <div class="back_to_top_btn">
+        <a href="#back"><i class="fas fa-chevron-circle-up fa-4x"></i></a>
     </div>
 </div>
-    </header>
+<section id="contact">
+    <article>
+        <p>This is the Contact area</p>
+    </article>
+</section>
+<section id="about">
+    <article>
+        <p>This is the About area</p>
+    </article>
+</section>
+<section id="terms">
+    <article>
+        <p>This is the Terms area</p>
+    </article>
+</section>
+<footer><img src="back_image.jpg" /></footer>
 </body>
